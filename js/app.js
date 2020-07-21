@@ -60,7 +60,6 @@ class UI {
             document.querySelector('#update-btn').setAttribute('data-id', id);
 
             this.inEditMode();
-           
         }
 
         
@@ -122,6 +121,7 @@ class UI {
     
 }
 
+// local storage
 class Store {
     static addPostToLs(item){
         const LIST = Store.getPostFromLs();
@@ -212,7 +212,6 @@ document.querySelector('#back-btn').addEventListener('click', (e)=>{
     ui.outOfEditMode();
     e.preventDefault();
 })
-
 
 document.addEventListener('DOMContentLoaded', ()=>{
     Store.displayLSList();
