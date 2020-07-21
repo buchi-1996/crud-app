@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+}
+
+header h3{
+    font-size: 1em;
+    text-transform: capitalize;
+}
+
+form button{
+    padding: 0.4em 2em !important;
+}
+
+.success-alert, .danger-alert, .warning-alert{
+    position: absolute;
+    top: 0;
+    margin-top: -40px;
+    transition: all .5s ease;
+}
+
+.success-alert.showAlert{
+    margin-top: 0;
+}
+
+.danger-alert.showAlert{
+    margin-top: 0;
+}
+
+.warning-alert.showAlert{
+    margin-top: 0;
+}
+
+.post-card h4{
+    text-transform: capitalize;
+}
+
+@media screen and (max-width: 768px){
+    form button{
+        padding: 0.3em 0.99em !important;
+    }
+}
